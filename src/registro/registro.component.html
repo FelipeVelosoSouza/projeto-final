@@ -1,0 +1,35 @@
+<div onclick="card flex justify-content-center">
+<p-card header="Login">
+    <div class="p-fluid">
+        <div class="p-field">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" pInput text[(ngModel)]="nome" name="nome">
+        </div>
+        <div class="p-field">
+            <label for="login">Login</label>
+            <input id="login" type="text" pInput text[(ngModel)]="login" name="login">
+        </div>
+        <div class="p-field">
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" pInput text[(ngModel)]="senha" name="senha">
+        </div>
+        <div class="p-field">
+            <label for="apelido">Apelido</label>
+            <input id="apelido" type="text" pInput text[(ngModel)]="apelido" name="apelido">
+        </div>
+        <div class="p-field">
+            <label for="idade">Idade</label>
+            <input id="idade" type="number" pInput text[(ngModel)]="idade" name="idade">
+        </div>
+        <div class="p-field">
+            <label for="curso">Curso</label>
+            <input id="curso" type="text" pInput text[(ngModel)]="curso" name="curso">
+        </div>
+        <div class="p-field">
+            <label for="periodo">Periodo</label>
+            <input id="periodo" type="text" pInput text[(ngModel)]="periodo" name="periodo">
+        </div>
+        <button (click)="registrar()" style="Margin-top:30px;" type="submit" pButton label="Registrar"></button>
+    </div>
+</p-card>
+</div>

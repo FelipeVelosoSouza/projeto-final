@@ -1,0 +1,27 @@
+<h2>adicionar TODO</h2>
+<div>
+ <label for="title">Titulo:</label>
+ <input id="title" type="text" [(ngModel)]="title" name="title" required>
+</div>
+<div>
+<label for="description">descrição:</label>
+<input id="description" type="text" [(ngModel)]="description" name="description" required>
+</div>
+<div>
+<label for="status">Status:</label>
+<select id="status" [(ngModel)]="status" name="status" required>
+<option value="pendente">Pendente</option>
+<option value="Concluido">Concluido</option>
+<option value="em progresso">Em progresso</option>
+</select>
+<div>
+<label for="dueDate">Data inicial:</label>
+<input id="dueDate" type="date" [(ngModel)]="initdate" name="initdate" required>
+</div>
+<div>
+<label for="dueDate">Previsão :</label>
+<input id="dueDate" type="date" [(ngModel)]="initdate" name="initdate" required>
+</div>
+<button (click)="addTodo"()>Adcionar</button>
+
+</div>

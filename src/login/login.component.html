@@ -1,0 +1,14 @@
+<div class="card flex justify-content-center">
+<p-card header="login"></p-card>
+<div class="p-fluid">
+    <div class="p-field">
+        <label for="username">Username</label>
+        <input id="username" type="text" pInputText[(ngModel)]="username" name="username">
+    </div>
+    <div class="p-field"></div> 
+    <label for="password">Password</label>
+        <input id="password" type="password" pPassword[(ngModel)]="password" name="password">
+    </div>
+    <button (click)="realizarLogin()" style="Margin-top: 30px;" type="submit" pButton label="Login"></button>
+    </p-card>
+</div>
